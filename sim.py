@@ -51,7 +51,7 @@ class VerticalDrone:
 
         self.error = self.setpoint - self.z # update error
         self.interror += self.error
-        self.deriverror = self.lasterror - self.error
+        self.deriverror = self.error - self.lasterror
         self.lasterror = self.error
 
         noise = np.random.normal(scale=self.sensor_noise) if self.sensor_noise > 0 else 0
