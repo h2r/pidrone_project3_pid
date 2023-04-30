@@ -22,6 +22,8 @@ class StudentPIDController(PIDController):
                 print exc
                 print 'Failed to load PID terms! Exiting.'
                 sys.exit(1)
+
+        # We override the default throttle PID with our own
         self.pid.throttle = PID(kp, ki, kd, k)
 
 
