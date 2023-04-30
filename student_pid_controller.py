@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 from student_pid_class import PID
 import sys
 sys.path.insert(0, '/home/pi/ws/src/pidrone_pkg/scripts')
